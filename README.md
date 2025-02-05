@@ -1,21 +1,51 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop.
+🌟 KMP Project with Koin 🌟
+Welcome to the Kotlin Multiplatform Project (KMP) utilizing Koin for Dependency Injection. 🚀 This project demonstrates how to set up and use Koin across Android, iOS, and Desktop platforms.
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+📋 Table of Contents
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+Introduction
 
+Setup
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+Modules
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+Usage
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+Android
+
+iOS
+
+Desktop
+
+License
+
+🎉 Introduction
+This project is built using Kotlin Multiplatform (KMP) to share code across Android, iOS, and Desktop applications. It integrates Koin for dependency injection, which simplifies managing dependencies in a decoupled and testable manner.
+
+⚙️ Setup
+1. Add Dependencies
+Add the necessary dependencies in your build.gradle.kts (or build.gradle) file.
+
+🔧 Modules
+Define your Koin modules in a shared module (commonMain).
+
+🚀 Usage
+Android
+Initialize Koin in your Android Application class.
+
+Inject dependencies in your Android classes.
+
+iOS
+Initialize Koin in your iOS entry point (e.g., AppDelegate).
+
+Inject dependencies in your iOS classes.
+
+Desktop
+Initialize Koin in your Desktop application entry point.
+
+Inject dependencies in your Desktop classes.
+
+📄 License
+This project is licensed under the MIT License.
+
+Enjoy working with your Kotlin Multiplatform Project with Koin! If you have any questions or suggestions, feel free to reach out. Happy coding! 🎉
